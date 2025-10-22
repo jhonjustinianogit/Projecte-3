@@ -9,8 +9,8 @@ La investigació interna ha revelat que un dels comptes tècnics va ser comprom�
 🧭 Com a resposta a aquesta crisi, la Direcció Tècnica ha emès una directriu: tot el personal tècnic ha de començar a utilitzar un gestor de contrasenyes validat per garantir l'ús de credencials úniques i robustes. Se us encarrega la tasca d'avaluar les opcions i crear la documentació necessària per a la formació del personal.
 
 ## Solució
-A l'arxiu [solució.md-Fase1](solucio.md-Fase1)  hi ha la tasca amd la solicuó de la Fase 1: Anàlisi i Justificació (Document d'Informe)
+A l'arxiu [solució.md-Fase1](solució.md-Fase1)  hi ha la tasca amd la solicuó de la Fase 1: Anàlisi i Justificació (Document d'Informe)
 
-A l'arxiu [solució.md-Fase2](solucio.md-Fase2)  hi ha la tasca amd la solicuó de la Fase 2: Guia d'Ús Tècnica (Manual Operatiu)
+A l'arxiu [solució.md-Fase2](solució.md-Fase2)  hi ha la tasca amd la solicuó de la Fase 2: Guia d'Ús Tècnica (Manual Operatiu)
 
 [Torna a la pàgina del projecte](../README.md)
