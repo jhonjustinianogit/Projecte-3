@@ -88,7 +88,27 @@ Seguidament en credencials d'inici de sessió emplenem el nostre correu i la nos
 
 ![foto17](img/17.png)
 
+Després d'emplenar les nostres dades més avall copiem un enllaç. Això és per al compte de web, que en aquest cas posarem “spotify.com” 
+
+![foto18](img/18.png)
+
+Després el tercer punt no es pot per motiu que tenim correu de l'escola.
+
+# 💾 Gestió de Còpies de Seguretat (Backup)
+
+Ens n'anem a eines al costat esquerre i entrem a exportar caixa forta
+
+![foto19](img/19.png)
+
+Una vegada li donem a confirmar el format ens demana la contrasenya
+
+![foto20](img/20.png)
+
+Després finalment desem el fitxer en una ubicació segura
+
+![foto21](img/21.png)
 
 
 
 
+[Torna a l'enunciat](README.md)
