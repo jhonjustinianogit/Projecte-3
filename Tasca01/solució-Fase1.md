@@ -81,3 +81,6 @@ Des del punt de vista de la seguretat, de la usabilitat com també de la continu
 🧱 KeePassXC pot ser una bona opció per a entorns molt restringits, però la gestió manual pot limitar l'eficiència.
 
 🧭 Eina recomanada: Bitwarden 
+
+
+[Torna a l'enunciat](README.md)
