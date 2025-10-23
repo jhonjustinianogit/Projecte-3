@@ -10,4 +10,8 @@ La investigació interna ha revelat que un dels comptes tècnics va ser comprom�
 
 ## Solució
 
+A l'arxiu [solució-Fase1.md](solució-Fase1.md)  hi ha la solució de la Fase 1: Anàlisi i Justificació (Document d'Informe)
+
+A l'arxiu [solució-Fase2.md](solució-Fase2.md)  hi ha la solució de la Fase 2: Guia d'Ús Tècnica (Manual Operatiu)
+
 [Torna a la pàgina del projecte](../README.md)
