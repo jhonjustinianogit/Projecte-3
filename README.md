@@ -41,3 +41,5 @@ Agafeu l’extintor… i el teclat. 🧯⌨️
 
 ## Tasques:
 - [Tasca01](Tasca01)
+
+- [Tasca04](Tasca04)
