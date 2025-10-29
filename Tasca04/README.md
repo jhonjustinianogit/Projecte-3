@@ -15,3 +15,8 @@ La vostra missió serà implementar el servei OpenLDAP en un servidor Linux. Aix
 
 S’ha redactat un document on s’especifica clarament la feina que s’ha de desenvolupar, el teniu disponible en el plec de condicions tècniques (també el podeu trobar al Moodle de l’assignatura).
 
+## Solució
+
+A l'arxiu [soluciómd](solució.md)  hi ha la solució de la tasca
+
+[Torna a la pàgina del projecte](../README.md)
