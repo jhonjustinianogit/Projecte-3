@@ -43,3 +43,6 @@ Agafeu l’extintor… i el teclat. 🧯⌨️
 - [Tasca01](Tasca01)
 
 - [Tasca04](Tasca04)
+
+- [Tasca06](Tasca06)
+  
