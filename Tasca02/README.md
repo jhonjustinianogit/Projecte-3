@@ -16,6 +16,7 @@ Per aquest motiu, rebreu una formació sobre els pilars de la gestió segura de 
 - Tecnologies de Redundància (RAID): Entendre els nivells clau de RAID i com s'utilitzen per protegir les dades contra la fallada de discs.
 - Models d’emmagatzematge: Descrivint les característiques, avantatges i desavantatges dels principals models d'emmagatzematge en xarxa: DAS (Direct Attached Storage), NAS (Network Attached Storage) i SAN (Storage Area Network), avaluant quin model ofereix el millor equilibri entre rendiment, cost i seguretat de la informació.
 
+## Solució 
 
 [Torna a la pàgina del projecte](../README.md)
 
