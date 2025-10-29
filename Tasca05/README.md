@@ -19,5 +19,8 @@ A més d’un informe amb tots aquests punts caldrà fer un últim apartat amb c
 
 Es farà d’auditoria per equips amb feedback per incorporar a l’informe a mode de correccions. També hi haurà una prova de validació.
 
+## Solució
 
+A l'arxiu [soluciómd](solució.md)  hi ha la solució de la tasca
 
+[Torna a la pàgina del projecte](../README.md)
