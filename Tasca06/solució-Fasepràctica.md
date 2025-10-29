@@ -103,11 +103,17 @@ S’obté que la IP 147.83.2.135 está asociada a molts noms de domini:
 
 -saladepremsa.upc.edu
 
+## Comprovació de Resolució amb nslookup (Multiplataforma)
 
+L’eina nslookup es troba a pràcticament a qualsevol sistema operatiu. Es pot usar de forma similar a dig incloent l’argument o si s’executa nslookup sense arguments, entrar en el mode interactiu, us apareix un prompt (>). Serà aquest mode el que explorareu . 
 
+![foto del apartat](img/portada2tasca.png)
 
+El mode és força senzill, bàsicament hi ha tres comandes a usar:
 
-
+- set type= per indicar el tipus de consulta: A, AAA, MX, NS, SOA, TXT o ALL.
+- server IP on IP és la IP del servidor de noms al que es vol fer la consulta, també es pot indicar el nom del servidor enlloc de la IP, per exemple, server a9-66.akam.net.
+- exit que serveix per sortir de la comanda.
 
 
 
