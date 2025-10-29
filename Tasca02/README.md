@@ -18,6 +18,8 @@ Per aquest motiu, rebreu una formació sobre els pilars de la gestió segura de 
 
 ## Solució 
 
+A l'arxiu [soluciómd](solució.md)  hi ha la solució de la tasca
+
 [Torna a la pàgina del projecte](../README.md)
 
 
