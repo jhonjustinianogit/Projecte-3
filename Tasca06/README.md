@@ -73,3 +73,4 @@ Finalment es vol comprovar el funcionament de la resolució local, útil per ent
 A l'arxiu [solució-Faseteòrica.md](solució-Faseteòrica.md)  hi ha la solució de la Fase teòrica: Sessió formativa
 
 
+[Torna a la pàgina del projecte](../README.md)
