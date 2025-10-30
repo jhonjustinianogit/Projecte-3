@@ -116,6 +116,17 @@ El mode és força senzill, bàsicament hi ha tres comandes a usar:
 - exit que serveix per sortir de la comanda.
 
 
+### Comanda 1: Consulta Bàsica no Autoritativa
 
+- Seleccionar type=A i com a domini de consulta tecnocampus.cat
 
+![foto14](img/6.14.png)
+
+- Anàlisi: Per què indica que la resposta és no autoritativa?
+
+El servidor consultado no administra tecnocampus.cat y está devolviendo datos de otro lado, por tanto tiene que consultar a otro lado y es por eso que no es autoritativa.
+
+### Comanda 2: Consultes autoritatives
+
+- Escriure server IP i escriure la IP del primer servidor de noms del domini tecnocampus.cat que s’ha obtingut d’una consulta anterior. A continuació, indiqueu que voleu consultar registres de tipus A i del domini tecnocampus.cat
 
