@@ -124,9 +124,31 @@ El mode és força senzill, bàsicament hi ha tres comandes a usar:
 
 - Anàlisi: Per què indica que la resposta és no autoritativa?
 
-El servidor consultado no administra tecnocampus.cat y está devolviendo datos de otro lado, por tanto tiene que consultar a otro lado y es por eso que no es autoritativa.
+El servidor consultat no administra tecnocampus.cat i està retornant dades, d'un altre costat, per tant, ha de consultar a un altre costat i és per això que no és autoritativa.
 
 ### Comanda 2: Consultes autoritatives
 
 - Escriure server IP i escriure la IP del primer servidor de noms del domini tecnocampus.cat que s’ha obtingut d’una consulta anterior. A continuació, indiqueu que voleu consultar registres de tipus A i del domini tecnocampus.cat
 
+El que hem de fer és fer la comanda que es mostra a continuació i copiar el primer servidor que ens surt.
+
+![foto15](img/6.15.png)
+
+Un cop tenim copiat el primer servidor, fem el següent:
+
+![foto16](img/6.16.png)
+
+- Anàlisi: Quines diferències s’observen a la resposta obtinguda amb la comanda 1?
+
+Que abans no era autoritativa i en aquesta sí que ho és.
+
+### Resolucions locals
+
+- Finalment es vol comprovar el funcionament de la resolució local, útil per entorns de xarxa local on no es disposa de servidor de noms propi i que evita haver d’accedir a equips o recursos per la seva IP.
+
+Per comprovar això fem un ping a la màquina d’un company.
+
+![foto17](img/6.17.png)
+
+
+[Torna a l'enunciat](README.md)
