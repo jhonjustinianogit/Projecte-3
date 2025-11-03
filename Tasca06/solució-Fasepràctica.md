@@ -150,5 +150,17 @@ Per comprovar això fem un ping a la màquina d’un company.
 
 ![foto17](img/6.17.png)
 
+O podem fer-ho aixì:
+
+![foto18](img/6.18.png)
+
+![foto19](img/6.19.png)
+
+![foto20](img/6.20.png)
+
+![foto21](img/6.21.png)
+
+![foto22](img/6.22.png)
+
 
 [Torna a l'enunciat](README.md)
