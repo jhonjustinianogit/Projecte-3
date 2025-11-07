@@ -48,7 +48,7 @@ Penseu que posteriorment, haureu de presentar al client les conclusions de la vo
 
 ## Solució
 
-A l'arxiu [soluciómd](solució.md)  hi ha la solució de la tasca
+A l'arxiu [solució.md](solució.md)  hi ha la solució de la tasca
 
 [Torna a la pàgina del projecte](../README.md)
 
