@@ -144,6 +144,154 @@ El consultor ha de verificar la correcta configuració de la infraestructura vir
 
 ![foto28](img/T28.png)
 
+## 3.2. Gestió i Administració (LAM)
+
+## 3.2.1. Instal·lació del Gestor d'Usuaris LDAP (LAM).
+"S'ha de documentar la comanda d'instal·lació"
+
+- Para instalar el gestor de usuarios LDAP hacemos la siguiente comanda:
+
+![foto29](img/T29.png)
+
+- Y esperamos que se instale.
+
+![foto30](img/T30.png)
+
+## 3.2.2. Accés Remot i Configuració.
+"Connectar a LAM des de la màquina física utilitzant l'adreça IP de la interfície Host-Only"
+
+- Para conectarnos desde la máquina física utilizando la la IP de la interficie de sólo anfitrión tenemos que hacer ip a para ver la ip para poner esa ip en la máquina física y poder conectarnos. 
+
+![foto31](img/T31.png)
+
+- La ip es: 192.168.56.101
+
+- Ahora una vez tenemos la ip en el navegador de la máquina física tenemos que poner la ip + /lam
+
+![foto32](img/T32.png)
+
+- Nos saldrá la siguiente pestaña a lo que tenemos que entrar a “la configuración de LAM”
+
+![foto33](img/T33.png)
+
+- Seguidamente entramos a “editar los perfiles del servidor”
+
+![foto34](img/T34.png)
+
+- Una vez entremos nos saldrá lo que se muestra en la imágen a continuación y la contraseña es lam “la podemos cambiar después una vez estemos dentro”
+
+![foto35](img/T35.png)
+
+- Una vez entramos nos ponemos a configurar las opciones generales como el idioma, la zona horaria, la cuenta admin, etc.
+
+- Primero en dirección del servidor tenemos que poner la ip, el idioma ponemos español y en lista de usuarios válidos ponemos cn=admin,dc=innovatech14,dc=test
+
+![foto36](img/T36.png)
+
+![foto37](img/T37.png)
+
+- Después en el “Tree suffix” ponemos dc=innovatech14.test,dc=test
+
+![foto38](img/T38.png)
+
+![foto39](img/T39.png)
+
+- Después por último ponemos una contraseña, en este caso yo para recordarme he puesto usuari.
+
+![foto40](img/T40.png)
+
+- Después de poner la contraseña le damos a guardar y nos pedirá una contraseña para poder entrar a la configuración, esa contraseña es p@ssw0rd y la contraseña que antes en la anterior captura hemos puesto es usuari, por tanto cuándo entremos nuevamente con la ip la contraseña es p@ssw0rd y si queremo configurar de nuevo para entrar es en ayuda y en edita los perfiles esa contraseña es usuari.
+
+## 3.2.3. Configuració per defecte.
+"Establir la configuració predeterminada perquè els nous usuaris s'ubiquin a l'OU users i els nous grups a l'OU groups"
+
+- Para que los nuevos usuarios que antes hemos creado en la máquina virtual en la OU se puedan configurar entramos a tipos de cuentas.
+
+![foto41](img/T41.png)
+
+- Una vez dentro de tipos de cuentas en usuarios, en sufijo LDAP ponemos ou=users,dc=innovatech14dc=test esto tiene que ser lo mismo que pusimos en la máquina virtual cuándo creamos la OU con los usuarios y los grupos.
+
+- En grupos lo mismo pero con groups, ponemos en sufijo LDAP ou=groups,dc=innovatech14,dc=test esto tiene que ser lo mismo que pusimos en la máquina virtual cuándo creamos la OU con los usuarios y los grupos.
+
+![foto42](img/T42.png)
+
+![foto43](img/T43.png)
+
+## 3.2.4. Creació de Grups.
+"Crear dos grups de seguretat al directori: tech i manager"
+
+- Entramos a grupos y le damos a crear nuevo grupo, ponemos el nombre que en este caso es tech y de damos a guardar.
+
+![foto44](img/T44.png)
+
+![foto45](img/T45.png)
+
+- Para el otro grupo lo mismo entramos a grupos y le damos a crear nuevo grupo, ponemos el nombre que es manager y por último le damos a guardar.
+
+![foto46](img/T46.png)
+
+![foto47](img/T47.png)
+
+- Para verificar que se hayan creado los dos grupos miramos que estén los dos:
+
+![foto48](img/T48.png)
+
+## 3.2.5. Creació d'Usuaris de Prova.
+"Crear un usuari per a cada grup: tech01 (membre de tech) i manager01 (membre de manager)"
+
+- Para crear los usuarios, nos vamos a usuarios y le damos a crear entonces ponemos de nombre tech01 y de apellidos lo mismo tech01.
+
+![foto49](img/T49.png)
+
+![foto50](img/T50.png)
+
+- Después en la parte lateral izquierda pone tres menús, entramos a donde pone Unix y le ponemos en grupo primario le ponemos “crear grupo con mismo nombre”
+
+![foto51](img/T51.png)
+
+![foto52](img/T52.png)
+
+- Y se nos pondrá ttech01 y le damos guardar.
+
+![foto53](img/T53.png)
+
+- Para crear el segundo usuario lo mismo, le damos crear nuevo usuario y en nombre ponemos manager01 y en apellido lo mismo ponemos manager01. 
+
+![foto54](img/T54.png)
+
+![foto55](img/T55.png)
+
+- Y en el menú de la izquierda en Unix ponemos igual que en el anterior usuario, ponemos en grupo primario “crear grupo con mismo nombre”
+
+![foto56](img/T56.png)
+
+![foto57](img/T57.png)
+
+- Y se nos pondrá mmanager01 y le damos guardar.
+
+![foto58](img/T58.png)
+
+- Para verificar que se hayan creado bien, nos vamos a usuarios y nos tendrían que salir los dos usuarios creados.
+
+![foto59](img/T59.png)
+
+- Ahora miramos que estén bien creados los usuarios y los grupos:
+
+![foto60](img/T60.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
