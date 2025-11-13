@@ -287,6 +287,214 @@ El consultor ha de verificar la correcta configuració de la infraestructura vir
 
 ![foto60](img/T60.png)
 
+## 4. Integració de Client (Client Ubuntu Desktop)
+
+## 4.1. Instal·lació del Client.
+"Instal·lar un client Ubuntu Desktop i configurar la interfície de xarxa per comunicar-se amb el servidor (Host-Only)"
+
+- Para eso creamos una nueva máquina virtual desde virtualbox ponemos el nombre, donde la queremos guardar y la iso que en este caso es de zorin. El enunciado dice que es ubuntu pero el profesor nos dijo que lo podríamos hacer con zorin.
+
+![foto62](img/T62.png)
+
+- Después en la configuración de la máquina en redes ponemos adaptador 1 en NAT.
+
+![foto63](img/T63.png)
+
+- Seguidamente habilitamos el segundo adaptador que en este caso lo pondremos en solo anfitrión para que se comunique con el servidor. 
+
+![foto64](img/T64.png)
+
+- Después entramos y hacemos toda la instalación y etc. Una vez dentro desde la terminal hacemos ip a para ver la ip y que se nos haya puesto correctamente. 
+
+![foto65](img/T65.png)
+
+## 4.2. Resolució de Noms.
+"Configurar l'arxiu d'hosts del client per resoldre l'adreça IP del servidor a server.innovatechXX.test. S'ha de proporcionar una instantània (snapshot) de la màquina client un cop fet el canvi"
+
+- Primeramente antes de todo hacemos la instantánea, para eso apagamos la máquina entramos a las tres rayas y clicamos obviamente donde dice instantáneas y le damos a hacer.
+
+![foto66](img/T66.png)
+
+![foto67](img/T67.png)
+
+- Nos saldrá una pestaña como la siguiente y le damos de acuerdo.
+
+![foto68](img/T68.png)
+
+- Ahora tenemos que entrar osea iniciar la máquina y abrimos la terminal nuevamente y hacemos las actualizaciones antes de todo. 
+
+![foto69](img/T69.png)
+
+- Ahora si comenzamos con lo que nos pide, para eso hacemos ip a para ver la ip.
+
+![foto70](img/T70.png)
+
+- Una vez ya sabemos la ip hacemos sudo nano /etc/host para editar el archivo.
+
+![foto71](img/T71.png)
+
+- Una vez dentro del archivo tenemos que poner la 2da y la 3ra línea que en la segunda línea lo que hacemos es que ponemos el hostname del cliente que será cliente.innovatech14.test cliente. En la tercera línea ponemos la ip del servidor que será 192.168.565.101 es 101 por qué es el servidor y el del cliente es 102.
+
+![foto72](img/T72.png)
+
+- Después entramos a sudo nano /etc/hostname para poner el hostname.
+
+![foto73](img/T73.png)
+
+- Dentro tenemos que poner el hostname del cliente que será cliente.innovatech14.test
+
+![foto74](img/T74.png)
+
+- Seguidamente comprobamos que funcionen correctamente los nombres, para eso hacemos hostname -f y dig server.innovatech14.test
+
+![foto75](img/T75.png)
+
+## 4.3. Mòduls d'Autenticació.
+"Instal·lar els mòduls necessaris per permetre l'autenticació amb LDAP"
+
+- Instalamos los módulos necesarios con la siguiente comanda:
+
+![foto76](img/T76.png)
+
+- Ponemos nuestro dominio:
+
+![foto77](img/T77.png)
+
+- Seguimos con la configuración y en este caso ponemos dc=innovatech14,dc=test
+
+![foto78](img/T78.png)
+
+- En la versión da igual cuál pongamos.
+
+![foto79](img/T79.png)
+
+- Seguimos y en este caso ponemos “si”
+
+![foto80](img/T80.png)
+
+- En la siguiente ponemos “no”
+
+![foto81](img/T81.png)
+
+- Verificamos que este bien y le damos aceptar:
+
+![foto82](img/T82.png)
+
+- Y por últimos ponemos una contraseña:
+
+![foto83](img/T83.png)
+
+## 4.4. Validació de la Connectivitat LDAP.
+"Comprovar la connectivitat amb el servidor fent una consulta ldapsearch des del client"
+
+- Para comprobar hacemos la siguiente comanda:
+
+![foto84](img/T84.png)
+
+![foto85](img/T85.png)
+
+![foto86](img/T86.png)
+
+![foto87](img/T87.png)
+
+## 4.5. Configuració del Client.
+"Modificar els arxius de configuració del client necessaris. S'han de mostrar clarament els canvis realitzats en el codi dels arxius"
+
+- Para modificar el archivo hacemos la siguiente comanda:
+
+![foto88](img/T88.png)
+
+- Una vez dentro lo que editamos es lo que pone el la siguiente imágen, “en la imagen ya esta cambiado”
+
+![foto89](img/T89.png)
+
+- Para editar el otro archivo hacemos la comanda: 
+
+![foto90](img/T90.png)
+
+- Aquí eliminamos la línea del término use_authtok
+
+![foto91](img/T91.png)
+
+![foto92](img/T92.png)
+
+- Ahora editamos el siguiente archivo y añadimos la línea indicada, para entrar hacemos la comanda: 
+
+![foto93](img/T93.png)
+
+![foto94](img/T94.png)
+
+## 4.6. Comprovació del Sistema
+"Reiniciar els serveis i verificar amb la comanda getent passwd que els usuaris del directori són visibles localment"
+
+- Reiniciamos el servicio con systemctl restart nscd:
+
+![foto95](img/T95.png)
+
+- Hacemos la comanda getent passwd | tail para ver si los usuarios son visibles
+
+![foto96](img/T96.png)
+
+- Después tenemos que editar el archivo indicado para que se pueda iniciar con el entorno gráfico.
+
+![foto97](img/T97.png)
+
+- Una vez dentro añadimos la línea indicada.
+
+![foto98](img/T98.png)
+
+## 4.7. Prova d'Accés Final
+"Reiniciar el client i iniciar sessió amb l'usuari tech01. Es requereix una captura de pantalla que demostri l'accés correcte i la creació automàtica de la carpeta personal de l'usuari"
+
+- Estamos en la recta final y tenemos que comprobar que podemos entrar con los usuarios.
+
+- Le damos a no está en esta lista.
+
+![foto99](img/T99.png)
+
+- Ponemos el nombre de usuario y la contraseña que le asignamos anteriormente en la configuración de loam desde la máquina física. La contraseña es 1234 para los dos usuarios.
+
+![foto100](img/T100.png)
+
+- Y hacemos lo mismo con el otro usuario, en las siguientes imágenes vemos que con los dos usuarios podemos entrar.
+
+![foto101](img/T101.png)
+
+- Hacemos id en los dos usuarios para comprobar que se le ha creado la carpeta personal.
+
+![foto102](img/T102.png)
+
+
+[Torna a l'enunciat](README.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
