@@ -251,9 +251,13 @@ El consultor ha de verificar la correcta configuració de la infraestructura vir
 
 ![foto52](img/T52.png)
 
-- Y se nos pondrá ttech01 y le damos guardar.
+- Y se nos pondrá ttech01.
 
 ![foto53](img/T53.png)
+
+- Le asignamos una contraseña y le damos guardar.
+
+![fot061](img/T61.png)
 
 - Para crear el segundo usuario lo mismo, le damos crear nuevo usuario y en nombre ponemos manager01 y en apellido lo mismo ponemos manager01. 
 
@@ -267,9 +271,13 @@ El consultor ha de verificar la correcta configuració de la infraestructura vir
 
 ![foto57](img/T57.png)
 
-- Y se nos pondrá mmanager01 y le damos guardar.
+- Y se nos pondrá mmanager01.
 
 ![foto58](img/T58.png)
+
+- Le asignamos una contraseña y le damos guardar.
+
+![fot061](img/T61.png)
 
 - Para verificar que se hayan creado bien, nos vamos a usuarios y nos tendrían que salir los dos usuarios creados.
 
