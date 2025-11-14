@@ -13,3 +13,9 @@ En equips:
    - ODS seleccionats 
    - Accions concretes al sector IT 
    - Beneficis socials, ambientals o econòmics  
+
+## Solució
+
+A l'arxiu [soluciómd](solució.md)  hi ha la solució de la tasca
+
+[Torna a la pàgina del projecte](../README.md)
