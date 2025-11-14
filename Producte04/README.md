@@ -23,8 +23,21 @@ Un cop establerta la connectivitat Host-Only, utilitzareu el protocol SCP (Secur
   - c. Arxius de zones creats a la carpeta /etc/bind/zones
 
 - Per copiar els arxius a la màquina física, cal obrir un terminal al PC i executar la comanda scp. Exemple:
+  - ![ejemplo para copiar archivos](img/producto04-ejemplo.png)
+  - El punt (.) al final de la comanda indica que l’arxiu es copiarà al directori actual de la vostra màquina física.
 
+## Fase 2: Integració a GitHub
 
+## Pas 2.1: Crear carpeta i arxiu README.md
+El primer pas serà crear la carpeta producte04 i el seu arxiu README.md. Recordeu que la carpeta es crea automàticament a donar a l’opció New File i en el nom indicar que es troba dins una carpeta, aquí seria producte04/README.md.
 
+A l’arxiu README.md cal a més de posar el títol del producte, fer una explicació del contingut.
 
+## Pas 2.2: Pujar arxius
+Procediu a pujar els diversos arxius, tenint en compte que haureu de crear la carpeta zones prèviament a pujar els arxius de les zones. Podeu usar el procediment que es va explicar, crear un arxiu que anomenareu zones/esborrar, i un cop pujats els arxius, procediu a esborrar aquest arxiu.
 
+## Solució
+
+A l'arxiu [solució.md](solució.md)  hi ha la solució de la tasca
+
+[Torna a la pàgina del projecte](../README.md)
