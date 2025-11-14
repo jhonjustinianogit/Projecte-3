@@ -58,6 +58,8 @@ Agafeu l’extintor… i el teclat. 🧯⌨️
 
 - [Tasca09](Tasca09)
 
+- [Tasca10](Tasca10)
+
 ## Productes:
 
 - [Producte01](Producte01)
