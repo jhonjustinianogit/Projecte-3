@@ -6,15 +6,15 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "digicore-19.test" {
+zone "digicore-14.test" {
 	type master;
-	file "/etc/bin/zones/db.digicore-19.test";
+	file "/etc/bin/zones/db.digicore-14.test";
 	allow-transfer {trusted;};
 };
 
 zone "4.168.192.in-addr.arpa" {
 	type master;
-	file "/etc/bind/zones/db.digicore-19.test";
+	file "/etc/bind/zones/db.digicore-14.test";
 };
 
 zone "waytoit.test" {
@@ -26,7 +26,7 @@ zone "waytoit.test" {
 zone "digicore-23.test" {
 	type slave;
 	file "digicore-23.test";
-	masters {192.168.4.19;};
+	masters {192.168.4.14;};
 };
 
 zone "instagram.com" {
