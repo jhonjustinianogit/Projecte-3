@@ -17,6 +17,6 @@ S’ha redactat un document on s’especifica clarament la feina que s’ha de d
 
 ## Solució
 
-A l'arxiu [soluciómd](solució.md)  hi ha la solució de la tasca
+A l'arxiu [solució.md](solució.md)  hi ha la solució de la tasca
 
 [Torna a la pàgina del projecte](../README.md)
