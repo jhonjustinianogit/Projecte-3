@@ -22,8 +22,7 @@ Un cop establerta la connectivitat Host-Only, utilitzareu el protocol SCP (Secur
   - b. /etc/bind/named.cof.local
   - c. Arxius de zones creats a la carpeta /etc/bind/zones
 
-- Per copiar els arxius a la màquina física, cal obrir un terminal al PC i executar la comanda scp. Exemple:
-  - ![ejemplo para copiar archivos](img/producto04-ejemplo.png)
+- Per copiar els arxius a la màquina física, cal obrir un terminal al PC i executar la comanda scp.
   - El punt (.) al final de la comanda indica que l’arxiu es copiarà al directori actual de la vostra màquina física.
 
 ## Fase 2: Integració a GitHub
