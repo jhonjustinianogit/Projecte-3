@@ -141,11 +141,11 @@ Instantànies (snapshots):  Crear i afegir dos discos de 10 GB al grup de volums
 
 7-  Seguidamente se prosigue a montar el LV
 
-![](img/24.png)
+![](img/25.png)
 
 8- En esta imagen lo montamos de forma permanente
 
-![](img/25.png)
+![](img/24.png)
 
 9- Movemos el archivo a la carpeta
 
