@@ -39,6 +39,8 @@ Procediu a pujar els diversos arxius, tenint en compte que haureu de crear la ca
 
 A la carpeta [zones](zones) hi ha els arxius de configuració de les zones.
 
-A l'arxiu [solució.md](solució.md)  hi ha la solució de la tasca
+A l'arxiu [named.conf.local](named.conf.local)  hi ha la confoguració on definim les zones.
+
+A l'arxiu [named.conf.options](named.conf.options)  hi ha la confoguració on definim les configuracios generals.
 
 [Torna a la pàgina del projecte](../README.md)
