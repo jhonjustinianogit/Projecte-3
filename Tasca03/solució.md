@@ -292,5 +292,6 @@ Mostrem com es visualitza l'estat dels discos i del pool des de la consola de ge
 
 ![](img/56.png)
 
+![](img/57.png)
 
 [Torna a l'enunciat](README.md)
