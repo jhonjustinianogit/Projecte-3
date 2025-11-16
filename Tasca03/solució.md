@@ -45,51 +45,51 @@ Configuració Inicial: Crear un grup de volums (VG) i un volum lògic (LV) utili
 
 2- Asignamos la cantidad de recursos que le daremos a la máquina
 
-![](img/01.png)
+![](img/02.png)
 
 3- Comenzamos a crear los discos donde se observa que se le asigna 10GB
 
-![](img/02.png)
+![](img/03.png)
 
 4- En esta imagen podemos observar cómo se han creado los discos correspondientes
 
-![](img/03.png)
+![](img/04.png)
 
 5- Montamos el primer disco
 
-![](img/04.png)
+![](img/05.png)
 
 6- Montamos el segundo disco
 
-![](img/05.png)
+![](img/06.png)
 
 5- Montamos el tercer disco
 
-![](img/06.png)
+![](img/07.png)
 
 6- En esta imagen podemos observar el estado de los discos creados
 
-![](img/07.png)
+![](img/08.png)
 
 7- Creamos un grupo de volúmenes
 
-![](img/08.png)
+![](img/09.png)
 
 8- Los VG son como particiones así que para que nos sean útiles tendremos que formatearlos con un sistema de archivos
 
-![](img/09.png)
+![](img/10.png)
 
 9- Para poder utilizar el VG tendremos que utilizar la comanda mount para montar el volumen
 
-![](img/10.png)
+![](img/11.png)
 
 10- Seguidamente iremos a este fichero para modificarlo de manera que el LV este montado de forma permanente
 
-![](img/11.png)
+![](img/12.png)
 
 11- Esta comanda sirve para hacer comprobaciones
 
-![](img/12.png)
+![](img/13.png)
 
 2.2. Alta Disponibilitat: Implementar la configuració d’un mirall (lvm_mirror) que protegeixi la informació davant la fallada d'un disc.
 
@@ -97,19 +97,19 @@ Alta Disponibilitat: Implementar la configuració d’un mirall (lvm_mirror) que
 
 1- Aquí hacemos pvs para ver los discos montados
 
-![](img/13.png)
+![](img/14.png)
 
 2- Creamos el VG mirror con los 2 discos
 
-![](img/14.png)
+![](img/15.png)
 
 3- Creamos un LV de 90Mb del mirror
 
-![](img/15.png)
+![](img/16.png)
 
 4- Aquí comprobamos que se ha hecho correctamente
 
-![](img/16.png)
+![](img/17.png)
 
 2.3. Instantànies (snapshots):  Crear i afegir dos discos de 10 GB al grup de volums. Crear un volum (lvm_dades) amb el primer disc afegit, formatar-lo i muntar-lo. A continuació afegir arxius al volum (poden ser imatges d’Internet). Usar el segon disc afegit per crear un snapshot (lv_snapshot) i documentar com es pot restaurar aquest snapshot, si per exemple, la informació del volum original es danyés.
 
@@ -117,51 +117,51 @@ Instantànies (snapshots):  Crear i afegir dos discos de 10 GB al grup de volums
 
 1- Crearemos un volumen denominado lmv_dades
 
-![](img/17.png)
+![](img/18.png)
 
 2- Montamos la copia para ver el contenido
 
-![](img/18.png)
+![](img/19.png)
 
 3-Montamos el volumen creado
 
-![](img/19.png)
+![](img/20.png)
 
 4- Modificamos el archivo de forma que sea permanente el montaje del archivo
 
-![](img/20.png)
+![](img/21.png)
 
 5- Creamos un archivo donde lo pondremos en la carpeta de lvm_dades
 
-![](img/21.png)
+![](img/22.png)
 
 6- En esta imagen crearemos otro LV denominado lv_snapshot, donde se le crea una carpeta
 
-![](img/22.png)
+![](img/23.png)
 
 7-  Seguidamente se prosigue a montar el LV
 
-![](img/23.png)
+![](img/24.png)
 
 8- En esta imagen lo montamos de forma permanente
 
-![](img/24.png)
+![](img/25.png)
 
 9- Movemos el archivo a la carpeta
 
-![](img/25.png)
+![](img/26.png)
 
 10- Seguidamente creamos el siguiente LV
 
-![](img/26.png)
+![](img/27.png)
 
 11- Aquí comprobamos que se han creado correctamente
 
-![](img/27.png)
+![](img/28.png)
 
 12- Aquí en la imagen se montamos los discos
 
-![](img/28.png)
+![](img/29.png)
 
 2.4. Escalabilitat: Demostrar el procés d'ampliació. Usar l’espai que quedi lliure dins el grup de volums per ampliar el volum lv_dades.
 
@@ -169,7 +169,7 @@ Escalabilitat: Demostrar el procés d'ampliació. Usar l’espai que quedi lliur
 
 1- Hacemos el siguiente comando que nos permite extender el volumen del LV
 
-![](img/29.png)
+![](img/30.png)
 
 ## 3. Part Windows: Espais d'Emmagatzematge (Storage Spaces)
 
@@ -181,11 +181,11 @@ Requisits de la Implementació i Demostració:
 
 Amb la màquina apagada, anem a paràmetres, emmagatzematge i creem 3 discos de 10 GB (simulats) i guardem.
 
-![](img/30.png)
+![](img/31.png)
 
 Ara dins de la màquina anem administració d’equips, inicialitzem els discos, utilitzem l’estil de partició MBR.
 
-![](img/31.png)
+![](img/32.png)
 
 3.2. Estudi de Configuracions: Demostrar i documentar la creació d'un Espai d'Emmagatzematge utilitzant:
 
@@ -193,65 +193,65 @@ Resiliència de Mirall (Mirroring): Usar dos dels discos. Comprovar que ofereix 
 
 Anem a espais d'emmagatzematge i creem.
 
-![](img/32.png)
+![](img/33.png)
 
 Seguidament creem grup, usant 2 dels discos.
 
-![](img/33.png)
+![](img/34.png)
 
 Posem tipus de resistència en reflexe doble i de capacitat màxima 30,70 GB.
 
-![](img/34.png)
+![](img/35.png)
 
 I ja estaria creat.
 
-![](img/35.png)
-
 ![](img/36.png)
-
-I posem algun arxiu (carpeta amb un arxiu a dins, un document de text per exemple) dins de l’espai per fer la prova de disponibilitat.
 
 ![](img/37.png)
 
-Comprovació que ofereix alta disponibilitat. Desconnectem el disc 2.
+I posem algun arxiu (carpeta amb un arxiu a dins, un document de text per exemple) dins de l’espai per fer la prova de disponibilitat.
 
 ![](img/38.png)
 
-![](img/39.png)
+Comprovació que ofereix alta disponibilitat. Desconnectem el disc 2.
 
-Surt una alerta que s’ha perdut el mirall.
+![](img/39.png)
 
 ![](img/40.png)
 
-Surt una alerta que s’ha perdut el mirall, però podem continuar llegint la informació que havíem guardat.
+Surt una alerta que s’ha perdut el mirall.
 
 ![](img/41.png)
 
+Surt una alerta que s’ha perdut el mirall, però podem continuar llegint la informació que havíem guardat.
+
 ![](img/42.png)
 
-Afegim el tercer disc a l'espai de reflex doble i entrem, no surt la alerta i podem veure el nostre disc de reflex doble amb normalitat i sense problemes. 
-
 ![](img/43.png)
+
+Afegim el tercer disc a l'espai de reflex doble i entrem, no surt la alerta i podem veure el nostre disc de reflex doble amb normalitat i sense problemes. 
 
 ![](img/44.png)
 
 ![](img/45.png)
 
+![](img/46.png)
+
 Resiliència de Paritat (Parity): Explicant la seva eficiència d'espai en comparació amb el mirall. Cal usar els tres discos.
 
 Creem grup, usant els 3 discos.
 
-![](img/46.png)
+![](img/47.png)
 
 Posem tipus de resistència en paritat i de capacitat màxima 30,70 GB.
 
-![](img/47.png)
+![](img/48.png)
 
 I ja estaria creat.
 
-![](img/48.png)
-
 ![](img/49.png)
+
+![](img/50.png)
 
 Eficiència d'espai: Paritat vs Mirall
 
@@ -266,31 +266,29 @@ Resiliència de mirall triple. Afegir tant discos de 10 GB com siguin necessaris
 Creem grup, usant tant discos de 10 GB com siguin necessaris (5 discos). 
 Amb la màquina apagada, anem a paràmetres, emmagatzematge i hem de tenir/crear 5 discos de 10 GB (simulats) i guardem. Dins de la màquina anem administració d’equips, inicialitzem els discos, utilitzem l’estil de partició MBR.
 
-![](img/50.png)
+![](img/51.png)
 
 Anem a espais d'emmagatzematge i creem.
 
-![](img/51.png)
+![](img/52.png)
 
 Seguidament creem grup, usant els 5 discos.
 
-![](img/52.png)
+![](img/53.png)
 
 Posem tipus de resistència en reflexe triple i de capacitat màxima 30,70 GB.
 
-![](img/53.png)
+![](img/54.png)
 
 I ja estaria creat.
 
-![](img/54.png)
-
 ![](img/55.png)
+
+![](img/56.png)
 
 3.3. Demostració de la Gestió: Mostrar com es visualitza l'estat dels discos i del pool des de la consola de gestió de Windows, simulant la facilitat de manteniment.
 
 Mostrem com es visualitza l'estat dels discos i del pool des de la consola de gestió de Windows, per simular la facilitat de manteniment. Ho hem fet amb el mirall triple.
-
-![](img/56.png)
 
 ![](img/57.png)
 
