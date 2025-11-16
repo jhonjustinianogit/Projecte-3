@@ -224,12 +224,7 @@ Aunque es una microempresa, Merkia360 muestra impactos positivos:
 - **Social:** Más de 100 dispositivos donados a fundaciones y proyectos educativos (ejemplo Fundación Gomaespuma).
 - **Económico:** Generan empleo y negocio local, con posibilidad de expansión internacional.
 
-
-
-
-
-
-
+[Torna a l'enunciat](README.md)
 
 
 
