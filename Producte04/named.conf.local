@@ -34,6 +34,3 @@ zone "facebook.com" {
 	    type forward;
 	    forwarders {192.134.30.12;};
 };
-
-
-[Torna a l'enunciat](README.md)
