@@ -8,25 +8,26 @@
 
 zone "digicore-14.test" {
 	type master;
-	file "/etc/bin/zones/db.digicore-14.test";
-	allow-transfer {trusted;};
+	file "/etc/bind/zones/db.digicore-14.test";
+	allow-transfer {192.168.4.23;};
 };
 
 zone "4.168.192.in-addr.arpa" {
 	type master;
-	file "/etc/bind/zones/db.digicore-14.test";
+	file "/etc/bind/zones/db.192.168.4";
+    allow-transfer {192.168.4.23;};
 };
 
 zone "waytoit.test" {
-	type slave;
-	file "waytoit.test";
-	masters {172.0.2.49;};
+        type slave;
+        file "db.waytoit";
+        masters {172.0.2.49;};
 };
 
 zone "digicore-23.test" {
-	type slave;
-	file "digicore-23.test";
-	masters {192.168.4.14;};
+        type slave;
+        file "db.digicore-23";
+        masters {192.168.4.23;};
 };
 
 zone "instagram.com" {
