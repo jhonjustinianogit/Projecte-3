@@ -37,7 +37,7 @@ Procediu a pujar els diversos arxius, tenint en compte que haureu de crear la ca
 
 ## Solució
 
-A la carpeta [zones](Producte04/zones) hi ha els arxius de configuració de les zones.
+A la carpeta [zones](zones) hi ha els arxius de configuració de les zones.
 
 A l'arxiu [solució.md](solució.md)  hi ha la solució de la tasca
 
